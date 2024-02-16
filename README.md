@@ -4,9 +4,11 @@ This is a personal college proyect in which the code takes an image and makes a 
 The idea behind this proyect is to make image filters only using C and Assembler for Linux based OS and learning the use of SIMD in conjunction with regular instructions and C.
 I wanted to learn how to create and modify images by taking each pixel information (RGBA values) and translating them to simple temperature measurments in order to create a new image using this data.
 The ecuation i used to retrieve the temperature is the following:
+/newline
        $t_{(i,j)} = \left\lfloor \frac{src.r_{(i,j)} + src.g_{(i,j)} + src.b_{(i,j)}}{3} \right\rfloor$
+/newline
 
-\[
+$\[
 dst(i,j) =
   \begin{cases}
     < 0, 0, 128 + t \cdot 4 >       & \quad \text{si } n < 32\\
