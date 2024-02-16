@@ -7,7 +7,6 @@ The ecuation i used to retrieve the temperature is the following:
 
 $t_{(i,j)} = \left\lfloor \frac{src.r_{(i,j)} + src.g_{(i,j)} + src.b_{(i,j)}}{3} \right\rfloor$
 
-$\[
 \text{dst}(i,j) =
   \begin{cases}
     (0, 0, 128 + t \cdot 4)       & \quad \text{si } n < 32\\
@@ -16,7 +15,6 @@ $\[
     (255, 255 - (t - 160) \cdot 4, 0)       & \quad \text{si } 160 \leq t < 224\\
     (255 - (t - 224) \cdot 4, 0, 0)       & \quad \text{en otro caso } n \\
   \end{cases}
-\]
 
 
 For an example, it take the following image:
