@@ -5,9 +5,9 @@ The idea behind this proyect is to make image filters only using C and Assembler
 I wanted to learn how to create and modify images by taking each pixel information (RGBA values) and translating them to simple temperature measurments in order to create a new image using this data.
 The ecuation i used to retrieve the temperature is the following:
 
-       $t_{(i,j)} = \left\lfloor \frac{src.r_{(i,j)} + src.g_{(i,j)} + src.b_{(i,j)}}{3} \right\rfloor$
+$t_{(i,j)} = \left\lfloor \frac{src.r_{(i,j)} + src.g_{(i,j)} + src.b_{(i,j)}}{3} \right\rfloor$
 
-\[
+$\[
 \text{dst}(i,j) =
   \begin{cases}
     (0, 0, 128 + t \cdot 4)       & \quad \text{si } n < 32\\
